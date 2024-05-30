@@ -7,7 +7,6 @@ void SapXepTheoTen(DanhSach& ds) {
     do {
         daSapXep = true;
         p = ds.pHead;
-
         while (p->pNext != q) {
             if (p->hoTen > p->pNext->hoTen) {
                 // hoan doi thong tin 2 sinh vien
@@ -22,7 +21,6 @@ void SapXepTheoTen(DanhSach& ds) {
         q = p; 
     } while (!daSapXep);
 }
-
 // ham sap xep sinh vien theo diem 
 void SapXepTheoDiem(DanhSach& ds) {
     bool daSapXep;
